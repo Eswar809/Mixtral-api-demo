@@ -2,7 +2,7 @@
 import { Mistral } from "@mistralai/mistralai";
 import { NextRequest } from "next/server";
 
-const apiKey = "yOZxu9Zq6TaxwMWhDjwN2lcC5HQZJuAv";
+const apiKey = process.env.MISTRAL_API_KEY;
 
 console.log("Mistral API Key:", apiKey ? "Loaded" : "MISSING");
 
