@@ -1,37 +1,93 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🤖 React Chat UI
 
-## Getting Started
+A modern and feature-rich chat interface built with React, TypeScript, and Tailwind CSS. This project provides a clean, responsive UI for displaying conversations, with special support for Markdown formatting and beautiful syntax highlighting for code blocks.
 
-First, run the development server:
+## ✨ Live Site
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+**[🚀 View the live demo here!](https://your-live-site-url.com)**
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+*(Replace the link above with your actual deployment URL)*
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🎥 Demo Video / GIF
 
-## Learn More
+A quick demonstration of the application's features and user interface.
 
-To learn more about Next.js, take a look at the following resources:
+*(**Option 1: Embed a GIF**. This is the recommended approach for a short, silent demo. Replace the link below with your own GIF.)*
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+![Chat UI Demo GIF](https://via.placeholder.com/800x500.png?text=Your+App+Demo+GIF+Here)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+*(**Option 2: Link to a Video**. Use this if you have a longer, narrated video on YouTube or another platform.)*
 
-## Deploy on Vercel
+[![Chat UI Demo Video](https://via.placeholder.com/800x500.png?text=Your+Video+Thumbnail+Here)](https://www.youtube.com/watch?v=your_video_id)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+<p align="center">
+  <em>(Click the image above to watch the video demo)</em>
+</p>
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-"# Mixtral-api-demo" 
+---
+
+## 🌟 Features
+
+* **User & Assistant Roles**: Differentiates between user messages and assistant responses.
+* **Full Markdown Support**: Renders assistant messages with support for headings, lists, tables, links, and more.
+* **Advanced Code Blocks**: Provides syntax highlighting for various programming languages using Prism.js.
+* **Inline Code Highlighting**: Correctly highlights inline code snippets (e.g., `const user = 'Gemini'`).
+* **Message Actions**:
+    * Copy message content to the clipboard.
+    * Edit and delete your messages.
+    * Like/Dislike assistant responses.
+* **Responsive Design**: A mobile-first design that looks great on all screen sizes.
+* **Built with Modern Tools**: Type-safe with TypeScript and styled efficiently with Tailwind CSS.
+
+---
+
+## 💻 Tech Stack
+
+* **Framework**: [React](https://reactjs.org/)
+* **Language**: [TypeScript](https://www.typescriptlang.org/)
+* **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+* **Markdown Rendering**: [React Markdown](https://github.com/remarkjs/react-markdown)
+* **Syntax Highlighting**: [React Syntax Highlighter](https://github.com/react-syntax-highlighter/react-syntax-highlighter)
+
+---
+
+## 🚀 Getting Started
+
+To get a local copy up and running, follow these simple steps.
+
+### Prerequisites
+
+Make sure you have Node.js and npm installed on your machine.
+
+* npm
+    ```sh
+    npm install npm@latest -g
+    ```
+
+### Installation
+
+1.  **Clone the repository:**
+    ```sh
+    git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
+    ```
+2.  **Navigate to the project directory:**
+    ```sh
+    cd your-repo-name
+    ```
+3.  **Install NPM packages:**
+    ```sh
+    npm install
+    ```
+4.  **Run the development server:**
+    ```sh
+    npm run dev
+    ```
+    Open [http://localhost:3000](http://localhost:3000) (or your configured port) to view it in the browser.
+
+---
+
+## 📄 License
+
+Distributed under the MIT License. See `LICENSE` for more information.
