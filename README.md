@@ -1,90 +1,172 @@
-# 🤖 React Chat UI
+```markdown
+# 🤖 Mixtral AI Chat Interface
 
-A modern and feature-rich chat interface built with React, TypeScript, and Tailwind CSS. This project provides a clean, responsive UI for displaying conversations, with special support for Markdown formatting and beautiful syntax highlighting for code blocks.
+A modern, production-ready chat interface powered by Mistral AI, built with Next.js, TypeScript, and Tailwind CSS. Features real-time streaming responses, Markdown rendering, and professional syntax highlighting.
 
-## ✨ Live Site
+**Note: This project was built as a demo task to showcase skills for Mistral AI job requirements, demonstrating proficiency in AI integration, React development, and deployment pipelines.**
 
-**[🚀 View the live demo here!](https://your-live-site-url.com)**
+## ✨ Live Demo
 
-*(Replace the link above with your actual deployment URL)*
+**[🚀 Try it live here](https://mixtral-api-testing-demo.netlify.app/)**
 
 ---
 
-## 🎥 Demo Video / GIF
+## 🎬 Demo
 
-A quick demonstration of the application's features and user interface.
+![App Demo](https://res.cloudinary.com/dx2knxa0f/image/upload/v1759557241/mixtral_ofl8b7.gif)
 
-*(**Option 1: Embed a GIF**. This is the recommended approach for a short, silent demo. Replace the link below with your own GIF.)*
+---
 
-![Chat UI Demo GIF](https://via.placeholder.com/800x500.png?text=Your+App+Demo+GIF+Here)
+## 📸 Screenshots
 
+### Main Interface
+![Main Interface](https://res.cloudinary.com/dx2knxa0f/image/upload/v1759556698/Screenshot_2025-10-04_111014_n7xyb0.png)
 
-<p align="center">
-  <em>(Click the image above to watch the video demo)</em>
-</p>
+### Chat View
+![Chat View](https://res.cloudinary.com/dx2knxa0f/image/upload/v1759557436/304d23a4-164a-4bbe-936f-a6d96d6ed16f.png)
+
+---
+
+## 🎯 What This Solves
+
+This project demonstrates building a production-ready AI chat interface that handles:
+- Real-time streaming responses from Mistral AI API
+- Complex Markdown rendering with tables, lists, and code blocks
+- Message persistence and conversation management
+- Professional UI/UX patterns for AI applications
 
 ---
 
 ## 🌟 Features
 
-* **User & Assistant Roles**: Differentiates between user messages and assistant responses.
-* **Full Markdown Support**: Renders assistant messages with support for headings, lists, tables, links, and more.
-* **Advanced Code Blocks**: Provides syntax highlighting for various programming languages using Prism.js.
-* **Inline Code Highlighting**: Correctly highlights inline code snippets (e.g., `const user = 'Gemini'`).
-* **Message Actions**:
-    * Copy message content to the clipboard.
-    * Edit and delete your messages.
-    * Like/Dislike assistant responses.
-* **Responsive Design**: A mobile-first design that looks great on all screen sizes.
-* **Built with Modern Tools**: Type-safe with TypeScript and styled efficiently with Tailwind CSS.
+* **AI-Powered Responses**: Integrated with Mistral AI for intelligent conversations
+* **Real-Time Streaming**: Displays responses as they're generated
+* **Full Markdown Support**: Renders headings, lists, tables, links, and formatted text
+* **Advanced Code Blocks**: Syntax highlighting for 100+ programming languages
+* **Message Actions**: Copy, edit, delete messages with like/dislike feedback
+* **Responsive Design**: Mobile-first design optimized for all screen sizes
+* **Type-Safe**: Full TypeScript implementation with strict type checking
 
 ---
 
 ## 💻 Tech Stack
 
-* **Framework**: [React](https://reactjs.org/)
-* **Language**: [TypeScript](https://www.typescriptlang.org/)
-* **Styling**: [Tailwind CSS](https://tailwindcss.com/)
-* **Markdown Rendering**: [React Markdown](https://github.com/remarkjs/react-markdown)
+* **Framework**: [Next.js 15.5](https://nextjs.org/) with Turbopack
+* **Language**: [TypeScript 5.9](https://www.typescriptlang.org/)
+* **Styling**: [Tailwind CSS 4.1](https://tailwindcss.com/)
+* **AI Integration**: [Mistral AI](https://mistral.ai/)
+* **Markdown**: [React Markdown](https://github.com/remarkjs/react-markdown) with GFM support
 * **Syntax Highlighting**: [React Syntax Highlighter](https://github.com/react-syntax-highlighter/react-syntax-highlighter)
+* **Deployment**: [Netlify](https://www.netlify.com/)
+
+---
+
+## 🏗️ Architecture
+
+- **API Integration**: Server-side streaming with Mistral AI SDK
+- **State Management**: React hooks for real-time conversation flow
+- **Component Design**: Reusable, typed components with clean separation
+- **Performance**: Optimized rendering with React memoization
+- **CI/CD**: Automated deployment pipeline with pnpm
 
 ---
 
 ## 🚀 Getting Started
 
-To get a local copy up and running, follow these simple steps.
-
 ### Prerequisites
 
-Make sure you have Node.js and npm installed on your machine.
-
-* npm
-    ```sh
-    npm install npm@latest -g
-    ```
+* Node.js 22.x or higher
+* pnpm 10.x or higher
 
 ### Installation
 
-1.  **Clone the repository:**
-    ```sh
-    git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
-    ```
-2.  **Navigate to the project directory:**
-    ```sh
-    cd your-repo-name
-    ```
-3.  **Install NPM packages:**
-    ```sh
-    npm install
-    ```
-4.  **Run the development server:**
-    ```sh
-    npm run dev
-    ```
-    Open [http://localhost:3000](http://localhost:3000) (or your configured port) to view it in the browser.
+1. **Clone the repository:**
+   ```
+   git clone https://github.com/Eswar809/Mixtral-api-demo.git
+   ```
+
+2. **Navigate to the project directory:**
+   ```
+   cd Mixtral-api-demo
+   ```
+
+3. **Install dependencies:**
+   ```
+   pnpm install
+   ```
+
+4. **Set up environment variables:**
+   ```
+   cp .env.example .env.local
+   ```
+   Add your Mistral API key to `.env.local`:
+   ```
+   MISTRAL_API_KEY=your_api_key_here
+   ```
+
+5. **Run the development server:**
+   ```
+   pnpm dev
+   ```
+   Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ---
 
-## 📄 License
+## 💡 Key Learnings
 
-Distributed under the MIT License. See `LICENSE` for more information.
+- Implemented streaming AI responses with proper error handling and state management
+- Built reusable React components with TypeScript interfaces for type safety
+- Managed complex real-time state for chat interactions and message history
+- Deployed full-stack application with secure environment variable management
+- Optimized build pipeline and resolved dependency conflicts in CI/CD
+
+---
+
+## 📁 Project Structure
+
+```
+mixtral-clone/
+├── src/
+│ └── app/
+│ ├── api/
+│ │ └── chat/
+│ │ └── route.ts # Mistral AI streaming API endpoint
+│ ├── components/
+│ │ ├── ChatInput.tsx  # User input component
+│ │ ├── ChatMessage.tsx  # Message display with markdown
+│ │ ├── Header.tsx  # App header
+│ │ ├── Header1.tsx  # chatview header
+│ │ ├── icons.tsx   # Icon components powered by mixtral
+│ │ └── ToolsPane.tsx # Tools sidebar panel
+│ ├── pages/
+│ │ └── LeChatPage.tsx # Main chat page component
+│ ├── favicon.ico # App favicon
+│ ├── globals.css # Global styles
+│ ├── layout.tsx # Root layout component
+│ └── page.tsx # Home page entry point
+├── .env.local # Environment variables (gitignored)
+├── .gitignore # Git ignore rules
+├── eslint.config.mjs # ESLint configuration
+├── netlify.toml  # Netlify deployment config
+├── next-env.d.ts # Next.js TypeScript declarations
+├── next.config.ts # Next.js configuration
+├── package.json # Project dependencies
+├── package-lock.json # npm lock file
+├── pnpm-lock.yaml # pnpm lock file
+├── postcss.config.mjs # PostCSS configuration
+└── README.md # Project documentation
+```
+
+---
+
+## 👨‍💻 Credits
+
+**Developed by Eswar Deevi**
+
+- GitHub: [@Eswar809](https://github.com/Eswar809)
+- Portfolio: [\[See it\]](https://eswardev.netlify.app/)
+
+
+---
+
+```
