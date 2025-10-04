@@ -1,0 +1,8 @@
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+[build.environment]
+  NODE_VERSION = "22"
+  NPM_VERSION = "10"
+  NETLIFY_BUILD_IMAGE = "ubuntu-noble-24.04"
