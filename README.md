@@ -1,4 +1,4 @@
-```markdown
+
 # 🤖 Mixtral AI Chat Interface
 
 A modern, production-ready chat interface powered by Mistral AI, built with Next.js, TypeScript, and Tailwind CSS. Features real-time streaming responses, Markdown rendering, and professional syntax highlighting.
@@ -168,5 +168,3 @@ mixtral-clone/
 
 
 ---
-
-```
