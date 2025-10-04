@@ -13,7 +13,7 @@ A modern, production-ready chat interface powered by Mistral AI, built with Next
 
 ## 🎬 Demo
 
-![App Demo](https://res.cloudinary.com/dx2knxa0f/image/upload/v1759557241/mixtral_ofl8b7.gif)
+![App Demo](https://raw.githubusercontent.com/Eswar809/portifolioo/refs/heads/main/mixtral.gif?token=GHSAT0AAAAAADJP6VZOJDQCGRSAVFWWEXB22HA2SNQ)
 
 ---
 
