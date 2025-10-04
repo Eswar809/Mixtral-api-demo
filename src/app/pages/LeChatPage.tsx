@@ -7,6 +7,7 @@ import { ChatInput } from '../components/ChatInput';
 import { ToolsPane } from '../components/ToolsPane';
 import { ChatMessage, Message } from '../components/ChatMessage';
 import Header1 from '../components/Header1';
+import { MainLogo } from '../components/icons';
 
 export default function LeChatPage() {
   const [isToolsPaneVisible, setToolsPaneVisible] = useState(false);
@@ -117,8 +118,6 @@ export default function LeChatPage() {
       <div className="flex h-full w-full flex-col items-center justify-center overflow-hidden">
         <div className="relative flex h-full w-full flex-col items-center justify-center">
     
-
-          {/* Main Content */}
           <div className="relative flex h-full w-full items-center justify-center overflow-hidden">
             <div className="relative flex h-full w-full flex-1 flex-col items-center justify-center">
               
@@ -128,18 +127,7 @@ export default function LeChatPage() {
                   {/* Welcome Screen Logo */}
                   <div className="absolute" style={{ bottom: '60%' }}>
                     <div className="flex flex-col items-center">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="95.2" height="68" viewBox="0 0 212.121 151.515">
-                        <rect x="30.303" y="0" width="30.303" height="30.303" fill="#ffd700"></rect>
-                        <rect x="151.515" y="0" width="30.303" height="30.303" fill="#ffd700"></rect>
-                        <rect x="30.303" y="30.303" width="60.606" height="30.303" fill="#ffaf00"></rect>
-                        <rect x="121.212" y="30.303" width="60.606" height="30.303" fill="#ffaf00"></rect>
-                        <rect x="30.303" y="60.606" width="151.515" height="30.303" fill="#ff8205"></rect>
-                        <rect x="30.303" y="90.909" width="30.303" height="30.303" fill="#fa500f"></rect>
-                        <rect x="90.909" y="90.909" width="30.303" height="30.303" fill="#fa500f"></rect>
-                        <rect x="151.515" y="90.909" width="30.303" height="30.303" fill="#fa500f"></rect>
-                        <rect x="0" y="121.212" width="90.909" height="30.303" fill="#e10500"></rect>
-                        <rect x="121.212" y="121.212" width="90.909" height="30.303" fill="#e10500"></rect>
-                      </svg>
+                      <MainLogo/>
                     </div>
                   </div>
 
