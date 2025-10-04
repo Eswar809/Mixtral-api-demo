@@ -18,9 +18,6 @@ A quick demonstration of the application's features and user interface.
 
 ![Chat UI Demo GIF](https://via.placeholder.com/800x500.png?text=Your+App+Demo+GIF+Here)
 
-*(**Option 2: Link to a Video**. Use this if you have a longer, narrated video on YouTube or another platform.)*
-
-[![Chat UI Demo Video](https://via.placeholder.com/800x500.png?text=Your+Video+Thumbnail+Here)](https://www.youtube.com/watch?v=your_video_id)
 
 <p align="center">
   <em>(Click the image above to watch the video demo)</em>
