@@ -1,0 +1,111 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  
+  /* Light mode colors (default) */
+  --color-background: #ffffff;
+  --color-foreground: #171717;
+}
+
+/* Dark mode - separate from @theme */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: #0a0a0a;
+    --color-foreground: #ededed;
+  }
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #141414;
+  color: #E0E0E0;
+}
+
+.shadow-big {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.07), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.bg-card {
+  background-color: #1F1F1F;
+}
+
+.bg-subtle {
+  background-color: #141414;
+}
+
+.bg-muted {
+  background-color: #2D2D2D;
+}
+
+.text-default {
+  color: #E0E0E0;
+}
+
+.text-subtle,
+.text-muted {
+  color: #9E9E9E;
+}
+
+.text-inverted-default {
+  color: #141414;
+}
+
+.bg-state-primary {
+  background-color: #4A90E2;
+}
+
+.bg-state-primary-hover:hover {
+  background-color: #4281CB;
+}
+
+.bg-state-brand {
+  background-color: #FA500F;
+}
+
+.bg-state-brand-hover:hover {
+  background-color: #E0480D;
+}
+
+.bg-state-secondary {
+  background-color: #333333;
+}
+
+.bg-state-secondary-hover:hover {
+  background-color: #444444;
+}
+
+.bg-state-ghost-hover:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.border-darker {
+  border-color: #444444;
+}
+
+.caret-brand-500 {
+  caret-color: #FA500F;
+}
+
+.bg-badge-sky {
+  background-color: rgba(56, 189, 248, 0.1);
+}
+
+.text-basic-blue-strong {
+  color: #38BDF8;
+}
+
+.bg-inverted {
+  background-color: #F5F5F5;
+}
+
+.ProseMirror:empty:before {
+  content: attr(data-placeholder);
+  float: left;
+  color: #9E9E9E;
+  pointer-events: none;
+  height: 0;
+}
+
+
